@@ -4,13 +4,14 @@
 
 This repository is the canonical source of truth for reusable standards used across projects. Agents must read the relevant standard files before implementation and must not rely on memory, prior chat context, or visual approximation when the repository is available.
 
-Current published module:
+Current published modules:
 
 - **Web Standards v1.0**
   - **Programme mode** — programme, initiative, youth, exploration, action and story-led websites.
   - **Platform mode** — institution, climate week, knowledge platform, event network and public-facing platform websites.
-
-Word/document standards are **not yet published in this repository**.
+- **Word Document Standards v1.1**
+  - Human-readable design system, machine-readable tokens, AI build rules, blocking QA and a fixed startup prompt.
+  - Fixed trigger: `按照规范生成`.
 
 ---
 
@@ -151,6 +152,23 @@ navigation or component decision:
 10. Do not write design reasoning into public-facing copy unless asked.
 ```
 
+For a **Word document**, use:
+
+```text
+Use Word Document Standard v1.1.
+Read and obey sunshinerao/my-standards before creating or editing the document.
+Trigger: 按照规范生成
+
+Read documents/README.md, documents/WORD_DESIGN_SYSTEM.md,
+documents/WORD_TOKENS.json, documents/AI_BUILD_RULES.md and
+documents/QA_CHECKLIST.md before work. Treat exact tokens as binding.
+Preserve the cover unless the task explicitly authorizes a cover change.
+Render and inspect every page before delivery, then report the pinned commit,
+package integrity, structural QA, visual QA and exceptions.
+```
+
+The complete reusable form is in `prompts/word_AGENT_START.md`.
+
 ---
 
 ## 4. Recommended project integration
@@ -195,7 +213,15 @@ my-standards/
 ├── VERSION
 ├── prompts/
 │   ├── web_PROGRAMME_AGENT_START.md
-│   └── web_PLATFORM_AGENT_START.md
+│   ├── web_PLATFORM_AGENT_START.md
+│   └── word_AGENT_START.md
+├── documents/
+│   ├── README.md
+│   ├── WORD_DESIGN_SYSTEM.md
+│   ├── WORD_TOKENS.json
+│   ├── AI_BUILD_RULES.md
+│   ├── QA_CHECKLIST.md
+│   └── VALIDATION_REPORT.md
 └── web/
     ├── README.md
     ├── 01_GLOBAL_FOUNDATION.md
@@ -243,6 +269,7 @@ Current repository baseline:
 Repository: my-standards
 Web Design System: v1.0
 Modes: Programme / Platform
+Word Document Standard: v1.1
 ```
 
 A project should record the exact commit SHA it uses. Updating the standards repository does not automatically approve a production project migration.
@@ -283,7 +310,7 @@ The system must not reproduce:
 | Web / Programme | Published v1.0 |
 | Web / Platform | Published v1.0 |
 | Web / AI Build Rules | Published v1.0 |
-| Word / Documents | Not yet published |
+| Word / Documents | Published v1.1 |
 | Presentation standards | Not yet published |
 | Other standards | Not yet published |
 

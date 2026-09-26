@@ -1,0 +1,153 @@
+{
+  "schema_version": "1.0",
+  "standard": {
+    "id": "rao-word-document-standard",
+    "version": "1.1",
+    "status": "published",
+    "trigger": "按照规范生成",
+    "units": {
+      "font_size": "pt",
+      "paragraph_spacing": "pt",
+      "linear_measure": "cm",
+      "ooxml_indentation": "twip"
+    }
+  },
+  "colors": {
+    "text": "000000",
+    "page_background": "FFFFFF"
+  },
+  "fonts": {
+    "ascii": "Aptos",
+    "hAnsi": "Aptos",
+    "eastAsia": "仿宋",
+    "cs": "Aptos"
+  },
+  "page": {
+    "size": "A4",
+    "orientation": "portrait",
+    "width_cm": 21.0,
+    "height_cm": 29.7,
+    "margin_top_cm": 2.55,
+    "margin_bottom_cm": 2.35,
+    "margin_left_cm": 2.7,
+    "margin_right_cm": 2.7,
+    "header_distance_cm": 1.0,
+    "footer_distance_cm": 1.0,
+    "different_first_page": true
+  },
+  "body_defaults": {
+    "line_spacing_multiple": 1.5,
+    "ooxml_line": 360,
+    "ooxml_line_rule": "auto",
+    "spacing_symmetry_required": true,
+    "font_color": "000000"
+  },
+  "roles": {
+    "section_eyebrow": {
+      "number_size_pt": 10.0,
+      "label_size_pt": 8.5,
+      "bold": true,
+      "uppercase_label": true,
+      "space_before_pt": 2.5,
+      "space_after_pt": 2.5,
+      "keep_with_next": true
+    },
+    "chapter_title": {
+      "size_pt": 21.0,
+      "bold": true,
+      "space_before_pt": 9.0,
+      "space_after_pt": 9.0,
+      "keep_with_next": true
+    },
+    "secondary_heading": {
+      "size_pt": 13.0,
+      "bold": true,
+      "space_before_pt": 7.5,
+      "space_after_pt": 7.5,
+      "keep_with_next": true
+    },
+    "numbered_item_heading": {
+      "size_pt": 12.5,
+      "bold": true,
+      "space_before_pt": 2.0,
+      "space_after_pt": 2.0,
+      "keep_with_next": true
+    },
+    "body": {
+      "size_pt": 11.5,
+      "bold": false,
+      "italic": false,
+      "first_line_indent_cm": 0.8,
+      "space_before_pt": 4.0,
+      "space_after_pt": 4.0
+    },
+    "chapter_intro": {
+      "size_pt": 12.0,
+      "first_line_indent_cm": 0.8,
+      "space_before_pt": 7.5,
+      "space_after_pt": 7.5
+    },
+    "numbered_item_explanation": {
+      "size_pt": 10.5,
+      "left_indent_cm": 1.05,
+      "first_line_indent_cm": 0.0,
+      "space_before_pt": 5.0,
+      "space_after_pt": 5.0
+    },
+    "explanatory_note": {
+      "size_pt": 9.0,
+      "ooxml_half_points": 18,
+      "ooxml_complex_script_half_points": 18,
+      "italic": true,
+      "bold": false,
+      "first_line_indent_cm": 0.0,
+      "space_before_pt": 4.0,
+      "space_after_pt": 4.0
+    },
+    "emphasis_statement": {
+      "size_pt_min": 14.0,
+      "size_pt_max": 15.0,
+      "bold": true,
+      "left_indent_cm": 0.75,
+      "right_indent_cm": 0.75,
+      "space_before_pt": 15.0,
+      "space_after_pt": 15.0
+    },
+    "bullet_level_0": {
+      "size_pt": 11.0,
+      "bold": false,
+      "number_format": "bullet",
+      "level_justification": "left",
+      "text_indent_cm": 0.635,
+      "hanging_indent_cm": 0.635,
+      "bullet_position_cm": 0.0,
+      "ooxml_left_twips": 360,
+      "ooxml_hanging_twips": 360,
+      "space_before_pt": 3.25,
+      "space_after_pt": 3.25,
+      "last_item_space_before_pt": 0.0,
+      "last_item_space_after_pt": 0.0,
+      "must_use_real_numbering": true
+    }
+  },
+  "cover": {
+    "inherits_body_line_spacing": false,
+    "inherits_body_spacing_symmetry": false,
+    "unchanged_from_version": "1.0"
+  },
+  "header_footer": {
+    "header_size_pt": 7.5,
+    "header_rule_pt": 0.5,
+    "footer_left_size_pt": 7.5,
+    "page_number_size_pt": 8.0,
+    "page_number_field": "PAGE",
+    "page_number_must_be_live_field": true
+  },
+  "prohibitions": {
+    "manual_bullet_character": true,
+    "manual_page_number": true,
+    "blank_lines_for_page_break": true,
+    "theme_color_without_approval": true,
+    "silent_token_approximation": true
+  }
+}

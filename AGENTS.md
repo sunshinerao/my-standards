@@ -1,6 +1,6 @@
 # AGENTS.md
 
-This repository contains normative reusable standards.
+This repository contains normative reusable standards for Web and Word documents.
 
 ## 1. Agent entry rule
 
@@ -127,3 +127,24 @@ Production projects should pin this repository to a full commit SHA.
 Do not assume that `main` is the approved production version for an existing project.
 
 A project-specific exception belongs in that project, not in this repository unless it has been approved as a reusable standard.
+
+## 7. Word document entry rule
+
+Before creating or editing a Word document that cites this repository, the Agent MUST:
+
+1. read `documents/README.md`;
+2. read `documents/WORD_DESIGN_SYSTEM.md`;
+3. load exact values from `documents/WORD_TOKENS.json`;
+4. read `documents/AI_BUILD_RULES.md`;
+5. run every blocking check in `documents/QA_CHECKLIST.md`;
+6. render and inspect every page before delivery.
+
+Fixed activation command:
+
+```text
+Use Word Document Standard v1.1.
+Read and obey sunshinerao/my-standards before creating or editing the document.
+Trigger: 按照规范生成
+```
+
+The cover remains on the v1.0 system unless the current task explicitly authorizes a cover change. Body-region text uses 1.5 line spacing and per-paragraph symmetric before/after spacing. Italic explanatory notes are exactly 9 pt. Level-0 bullets use `left=360 twips` and `hanging=360 twips`.
