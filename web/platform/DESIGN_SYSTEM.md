@@ -67,8 +67,8 @@ Rules:
 ### Scale
 
 ```css
---x-display-xl: clamp(3.8rem, 7vw, 7.4rem);
---x-display-lg: clamp(3rem, 5vw, 5.6rem);
+--x-display-xl: clamp(3.135rem, 5.775vw, 6.105rem);
+--x-display-lg: clamp(2.475rem, 4.125vw, 4.62rem);
 --x-h1: clamp(2.8rem, 4.5vw, 5rem);
 --x-h2: clamp(2rem, 3.2vw, 3.6rem);
 --x-h3: clamp(1.4rem, 2vw, 2.25rem);
@@ -80,6 +80,7 @@ Rules:
 Rules:
 
 - Display weight: 500–700.
+- Platform display sizes use 82.5% of the original v1.0 scale (a 17.5% reduction), applied to all three `clamp()` values. Use the updated tokens directly; do not apply the reduction a second time. H1–H3 and body sizes retain their existing values.
 - Body: 400.
 - Labels: 500–700.
 - Large institutional statements use compact tracking, not ultra-condensed decorative type.

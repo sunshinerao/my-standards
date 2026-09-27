@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.1.1 — 2026-09-27
+
+- Reduced Platform `--x-display-xl` and `--x-display-lg` by 17.5%, including the minimum, viewport and maximum values in each `clamp()`.
+- Kept all other typography, layout, interaction, Programme and Word standards unchanged.
+
 ## 1.1.0 — 2026-09-26
 
 - Published Word Document Standard v1.1 without changing any file under `web/`.
